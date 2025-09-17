@@ -1,0 +1,38 @@
+public class Box {
+    private float width, height, depth;
+
+    // No-arg constructor
+    public Box() {
+        width = height = depth = 0;
+    }
+
+    // Parameterized constructor
+    public Box(float w, float h, float d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    // Clone constructor
+    public Box(Box b) {
+        this.width = b.width;
+        this.height = b.height;
+        this.depth = b.depth;
+    }
+
+    // Getters
+    public float getWidth() { return width; }
+    public float getHeight() { return height; }
+    public float getDepth() { return depth; }
+
+    // Setters
+    public void setWidth(float w) { width = w; }
+    public void setHeight(float h) { height = h; }
+    public void setDepth(float d) { depth = d; }
+
+    // Display volume
+    public void displayVolume() {
+        float volume = width * height * depth;
+        System.out.println("Volume of Box: " + volume);
+    }
+}
