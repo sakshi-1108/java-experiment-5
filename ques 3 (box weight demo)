@@ -1,0 +1,22 @@
+public class BoxWeightDemo {
+    public static void main(String[] args) {
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        // Using parameterized constructor
+        BoxWeight bw1 = new BoxWeight(2, 3, 4, 5);
+        bw1.displayVolume();
+        bw1.displayWeight();
+
+        // Using clone constructor
+        BoxWeight bw2 = new BoxWeight(bw1);
+        bw2.displayVolume();
+        bw2.displayWeight();
+
+        // Using no-arg constructor
+        BoxWeight bw3 = new BoxWeight();
+        bw3.displayVolume();
+        bw3.displayWeight();
+    }
+}
