@@ -1,0 +1,30 @@
+public class BoxWeight extends Box {
+    private float weight;
+
+    // No-arg constructor
+    public BoxWeight() {
+        super();
+        weight = 0;
+    }
+
+    // Parameterized constructor
+    public BoxWeight(float w, float h, float d, float wt) {
+        super(w, h, d);   // calls Box constructor
+        weight = wt;
+    }
+
+    // Clone constructor
+    public BoxWeight(BoxWeight bw) {
+        super(bw);  // calls Box clone constructor
+        this.weight = bw.weight;
+    }
+
+    // Getter and Setter
+    public float getWeight() { return weight; }
+    public void setWeight(float wt) { weight = wt; }
+
+    // Display weight
+    public void displayWeight() {
+        System.out.println("Weight of Box: " + weight);
+    }
+}
